@@ -82,7 +82,7 @@ def get_dataloader(xlsx_file, root_dir, batch_size=32, shuffle=True, num_workers
 
     colored_transform = transforms.Compose([
         transforms.Resize((256, 256)),
-        transforms.Lambda(lambda img: img.convert("RGB")),
+        #transforms.Lambda(lambda img: img.convert("RGB")),
         transforms.ToTensor(),
     ])
 
